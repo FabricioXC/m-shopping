@@ -1,4 +1,3 @@
-// import { Device } from '@/domain/models';
 import { ProductInfoShoppingCart } from "@/domain/models/products";
 
 import { GenericPost } from "../generic";
