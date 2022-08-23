@@ -30,7 +30,6 @@ export const ProductMainImageContainer = styled.div`
 
 export const ProductMainTitle = styled.div`
   color: #000;
-  /* border-radius: 0.5em; */
   padding: 0 0.7em 0.7em 0.7em;
   display: flex;
   flex-direction: row;

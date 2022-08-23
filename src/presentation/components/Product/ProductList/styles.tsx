@@ -10,8 +10,6 @@ export const ProductListWrapper = styled.div<ProductListWrapperProps>`
   padding: 0.7em 0.7em 0.7em 0.7em;
   display: flex;
   flex-direction: column;
-  /* border: 1px solid #000; */
-  /* justify-content: flex-start; */
   width: 40%;
   justify-content: space-between;
 `;
@@ -25,5 +23,4 @@ export const ProductListTitle = styled.div`
   font-size: large;
   justify-content: center;
   align-items: center;
-  /* justify-content: space-between; */
 `;

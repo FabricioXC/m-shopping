@@ -16,7 +16,7 @@ import { store } from "@/redux/store";
 import { InternalContainer } from "@/styles/containers";
 import { useEffect, useState } from "react";
 import { useSelector } from "react-redux";
-
+import { resumeTotal } from "@/presentation/helpers";
 const Checkout = () => {
   const [isLoading, setIsLoading] = useState<boolean>(false);
   const [showModal, setShowModal] = useState(false);
@@ -50,19 +50,11 @@ const Checkout = () => {
   };
 
   useEffect(() => {
-    const resumeTotal = (value: ShoppingCart): ShoppingCartResume => {
-      let subTotal: number = 0;
-      value.products.forEach((product) => {
-        subTotal = subTotal + Number((product.qty * product.price).toFixed(2));
-      });
-
-      return { subTotal: subTotal, products: value.products.length };
-    };
-
     if (shoppingCart.products) {
       setShoppingResume(resumeTotal(shoppingCart));
     }
   }, [shoppingCart]);
+
   const mockLoading = () => {
     setIsLoading(false);
 

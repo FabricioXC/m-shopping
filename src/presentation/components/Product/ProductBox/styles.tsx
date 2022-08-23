@@ -44,9 +44,7 @@ export const ProductTitle = styled.div`
   display: flex;
   flex-direction: row;
   align-items: flex-start;
-  /* border: 1px solid black; */
   height: 100%;
-  /* width: 50px; */
 `;
 
 interface ProductPriceProps {
@@ -57,19 +55,13 @@ export const ProductPrice = styled.div<ProductPriceProps>`
   margin: 0%;
   font-size: ${(props) => (props.checkout ? "small" : "medium")};
   color: #000;
-
   width: 100%;
-
-  /* border: 1px solid black; */
 `;
 export const ProductPriceSelectorWrapper = styled.div`
   display: flex;
   flex-direction: row;
   width: 100%;
   align-items: flex-end;
-
-  /* align-items: center; */
-  /* border: 1px solid black; */
 `;
 
 export const ProductSelector = styled.div`
