@@ -1,0 +1,3 @@
+export const SHOPPING_CART = "SHOPPING_CART";
+export const PRODUCT_DATA = "PRODUCT_DATA";
+export const PRODUCT_SELECTED = "PRODUCT_SELECTED";
