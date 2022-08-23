@@ -7,7 +7,7 @@ export const MainContainer = styled.div`
 `;
 
 export const InternalContainer = styled.div`
-  background-color: #282c34;
+  background-color: #2079d7;
   min-height: 100vh;
   display: flex;
   flex-direction: column;
